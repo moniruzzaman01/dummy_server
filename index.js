@@ -8,6 +8,9 @@ app.use(cors());
 app.get("/", async (req, res) => {
   res.send("hello");
 });
+app.get("/home", async (req, res) => {
+  res.send("Home");
+});
 app.listen(port, () => {
   console.log("server is running from: ", port);
 });
